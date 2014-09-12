@@ -1,7 +1,10 @@
+
+/*Body style*/
 body {
 	background: -webkit-linear-gradient(bottom, rgba(200,200,200, 0.6), rgba(200,200,200, 0.6)), url("../img/image4.jpg") no-repeat center fixed;
 }
 
+/*Header Style*/
 header h1 {
 	margin: 0px 0px 0px 30px; 
 	padding-left: 100px;
@@ -10,6 +13,8 @@ header h1 {
 	font-family: 'Lobster', cursive;
 }
 
+
+
 header p {
 	margin: -3px 0px 10px 180px;
 	font-style: italic;
@@ -17,6 +22,9 @@ header p {
 	font-size: 25px;
 
 }
+
+
+/*welcome message container style*/
 
 #welcomemessage {
 	width: 50%;
@@ -31,21 +39,25 @@ header p {
 	font-size: 18px;
 } 
 
+/*welcome message text stle*/
+
 #welcomemessage h2 {
 	font-size: 25px;
 	margin-bottom: 10px;
 }
 
+/*span style*/
 span {
 	color: red;
 	font-weight: bold;
 }
 
-form {
+#form {
 	text-align: center;
 	margin-top: 30px; 
 }
 
+/*...Text input and button style....*/
 input[type="text"]{
 	width: 25%; 
 	margin: 10px 0;
@@ -66,14 +78,18 @@ input[type="button"]{
 	color: white;
 }
 
+/*...List container style..*/
+
 #list {
+	text-align: center;
 	margin:3% auto 28%;
 	width: 50%;
 	height: 100%;
 }
 
+/*...list header style...*/
+
 #list h3{
-	text-align: center;
 	margin-bottom: 20px;
 	font-size: 20px;
 	color: #FF7F50;
@@ -81,15 +97,18 @@ input[type="button"]{
 
 }
 
+/*Primary and Final list container style*/
+
 #primarylist, #finalist {
-	float: left;
 	padding: 10px;
-	width: 220px;
-	height: 50%;
+	width: 45%;
 	background: rgb(64,64,64);
 	color: white;
-	border-radius: 0px 30px;
+}
 
+#primarylist {
+	float: left;
+	border-radius: 0px 30px;
 }
 
 #finalist {
@@ -97,16 +116,85 @@ input[type="button"]{
 	border-radius: 30px 0px;
 }
 
+/*list style*/
+
 li {
 	list-style: none;
 	margin-bottom: 20px;
+	font-size: 1.2em;
 }
 
+/*When checked*/
 #checked {
 	margin-right: 20px;
 }
 
+/*when an item has been deleted*/
 #delete {
 	margin-left: 20px;
 	float: right;
+}
+
+
+/*.....Media Query......*/
+
+@media screen and (max-width: 1210px) {
+
+
+	header h1 {
+		margin: 0px 0px 0px 20px;
+		text-align: left;
+		font-size: 35px;
+		padding-left: 5px;
+	}
+
+	header p {
+		margin: -3px 0px 30px 50px;
+		text-align: left;
+		font-size: 20px;
+		padding-left: 5px;
+	}	
+
+	#list {
+		text-align: left;
+		padding: 20px 50px;
+		display: block;
+	}
+
+	#list h3{ 
+		text-align: center;
+	}
+
+	#primarylist {
+		width: 92%;
+		clear: both;
+		margin-bottom: 10px;
+		border-radius: 0;
+	}
+
+	#finalist {
+		float: none;
+		width: 92%;
+		clear: both;
+		border-radius: 0;
+	}
+
+
+	#checked {
+	margin-right: 10px;
+	}
+
+
+	#delete {
+	margin-left: 10px;
+	}
+
+	input[type="text"]{
+		width: 50%;
+		margin:10px auto;
+		display: block;
+		clear: both;
+		font-size: 20px;
+	}
+	
 }
